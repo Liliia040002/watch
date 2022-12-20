@@ -1,5 +1,15 @@
+@import "base/variables";
+
+* {
+    font-family: 'MuseoModerno', cursive;
+}
+
 .container {
     max-width: 950px;
+    margin: 0 auto;
 } 
 
-@import url(sass\_blocks.scss);
+@import "blocks/promo";
+@import "blocks/header";
+@import "blocks/buttons";
+@import "blocks/advantages";
