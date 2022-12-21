@@ -40,4 +40,17 @@
 
     }
 
+    @media (max-width: 576px) {
+    align-items: flex-end;
+    &__logo {
+        width: 180px;
+    }
+    &__official {
+        display: none;
+    }
+    &__phone {
+        font-size: 16px;
+    }
+    }
+
 }

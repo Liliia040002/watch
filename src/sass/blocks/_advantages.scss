@@ -36,3 +36,47 @@
     }
 
 }
+
+
+
+@media (max-width: 768px) {
+    
+    .advantages {
+
+        .title {
+            font-size: 25px;
+            margin: 60px;
+        }
+        &__item {
+            width: 200px;
+        }
+        &__subtitle {
+            font-size: 15px;
+        }
+        &__desc {
+            font-size: 12px;
+        }
+
+    }
+ }
+
+ @media (max-width: 576px) {
+    .advantages {
+        min-height: 470px;
+        .title {
+            font-size: 22px;
+            margin-bottom: 40px;
+        }
+        &__wraper {
+            flex-direction: column;
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+        }
+        &__desc {
+            margin-bottom: 30px;
+        }
+    
+    }
+ }
