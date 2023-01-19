@@ -1,0 +1,74 @@
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.534);
+    width: 100vw;
+    height: 100vh;
+    .close {
+        position: absolute;
+        top: -10px;
+        right: -50px;
+        color: $main-color;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .modal {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 382px;
+        min-height: 402px;
+        padding: 35px 38px 40px 38px;
+        background-color: rgba(242, 242, 242, 1);
+        .title {
+            font-weight: 700;
+            font-size: 19px;
+            line-height: 19px;
+            color: rgba(13, 13, 13, 1);
+            text-align: center;
+        }
+        .consultation__descr {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 14px;
+            color: rgba(13, 13, 13, 1);
+            text-align: center;
+        }
+        .feed-form {
+            margin-top: 20px;
+        }
+        .error {
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 300;
+            color: rgb(255, 67, 67);
+          
+      
+
+        }
+    
+      
+        
+    }
+    .modal-mini {
+        min-height: 143px;
+    }
+
+    @media (max-width: 768px) {
+        .close {
+            top: -120px;
+            right: 0px;
+        }
+        .modal {
+            width: 90vw;
+            padding: 35px 20px 40px 20px;
+
+        }
+    }
+}
+
+#consultation, #order, #thanks {
+    display: none;
+}
